@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="blue" size="0.800000 0.532923" />
+    <ImageTarget name="jaunerougevert" size="0.800000 0.599385" />
+    <ImageTarget name="cpsc495-final-presentation-widescreen-23-638" size="0.800000 0.450157" />
+    <ImageTarget name="texfilter1" size="0.800000 0.449780" />
+    <ImageTarget name="Try" size="0.800000 0.450157" />
+    <ImageTarget name="rBVaWVxmzn-AdIcqAApjwL7Y04c545" size="0.800000 0.450833" />
+    <ImageTarget name="wood-chips-1180119" size="0.800000 0.600000" />
+    <ImageTarget name="5star" size="0.800000 0.450000" />
+    <ImageTarget name="uv_map_reference" size="0.800000 0.800000" />
+    <ImageTarget name="NEONCAR" size="0.800000 0.450000" />
+    <ImageTarget name="dedmem" size="69.000000 69.000000" />
+  </Tracking>
+</QCARConfig>

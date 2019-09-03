@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,8 +29,23 @@ public class Mouvement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTime += Time.deltaTime;
-        transform.position = Vector3.Lerp(transform.position, to.position, time / currentTime);
-        Debug.Log(transform.position);
+        if (currentTime < time)
+        {
+            currentTime += Time.deltaTime;
+            transform.position = Vector3.Lerp(from.position, to.position, currentTime / time);
+            Debug.Log(currentTime / time);
+        }
+        else
+        {
+            Invert();
+            currentTime = 0f;
+        }
+    }
+
+    private void Invert()
+    {
+        Vector3 fromPosition = from.position;
+        from.position = to.position;
+        to.position = fromPosition;
     }
 }

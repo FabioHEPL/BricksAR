@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AVeE3Vf/////AAABmRRASGIQlE2tnBSBpPqlxal8zA1pEMhn0kCt9m8U9oMDWY7ZAWEKOoDd7jEZj8iI1wvSG0kYQGAu/C9f26qISZYE+1LsEex59hGS99JtBsjvxubNbVBc5S9MpAjLjA4cw8UzLMDgksQ5ARSKWibOQmwqN3ctK2uPjMfvUbJib5kQK/Yt2qSnPlDyok48noRd0JM6GVSh57tBBpEAWkE0gGAlDHjzxW6mPLlt3XOdcOf15O3Aizno3C54uOWhmV59nJWdy78Ac8J6oMdRlsyC6TlifXCT1MkVjBOu4bxJiZS6v27zMs5UnBWiaXrz43kd+Uo4EHfJLjELSYpir4sri9L44gU9Nmu96RSTXCzZdR4y
+    vuforiaLicenseKey: AYgbkUf/////AAABmcw6QZu/40xAhacSlWCOxCdjaZABCHq+hV/OxuXth/rpkSNxzzSbdTrsDeb94D+j+lXCtYuqSakU2cir/G20O6AymfkV6Ma/VqabuUBeeLk32HKSVsZfISiyPrWKZUHCrksr7+wKCjDElzmnI52xGOSkikPSkYo9/rSs4WyGA7DjIYQD06CCqGr4ZuY++L5IokQOD5pXjy7HpWeZMWHxZuI6SDLUwlJD0nUqx6LVE4RRw3aBCmOwWIQsCai+KuNd7Mi1qZazpZ9VhrjlRNDt+LR+gYIlFx+GI/srrEIL1W8eMDCfHRniLCOfgHL1fRH0x0i/foWmEI+2Z2hQneNQMPGpfB7jie2iOp+fDqFHf86D
     ufoLicenseKey: QVR3YnJSTC8vLy8vQUFBQUtHUENGa1NwMVUvU29YS0ZWWjdPUDlZbnAvdDZ0ZmRVaHVTTDI0dXlVcnVWa25iZlhsMmNCZTZobHVyMXh5eVlaRHNoOTRNOHBPam5SeHBlbTVtZ1E2d054UmNvVWJLYnpxYTJIM2xWc1lSOXlHbVZGNzFyK0gwazUzRzNJenJsVGF0Mi9sU2ZZM0Y2bXlWNmhtT2JaMjZDTW50dDlyM3luK25yTTlsOUY0UGQyN0dRcTJYMGtyVlpUZGdUbC96elpXSjhPSDMvNUozOFU5OEthalVZVEZaY2dJUGg5ZUNZaEhnYlQvVlNKSEY4N0NVYVNpNFFrR3JjZ1kzclJlSTc4WHJranlGalRsY2hidnZnZU1XZ2ZlOWROU3lGODNlNUJLK2ZmeTEzMjRTbXZzSFhMbGRYc016M0E3WWFLTVA2TS9WS0ticlk1R2RXVGVGY2hJd2RQYTBEM0FxT3FKT05GUk1zVlExSFZ2S3E=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
@@ -49,8 +49,9 @@ MonoBehaviour:
   videoBackground:
     clippingMode: 0
     numDivisions: 2
-    videoBackgroundShader: {fileID: 0}
-    matteShader: {fileID: 0}
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
+    matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
@@ -65,6 +66,6 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: Microsoft LifeCam VX-5000
     turnOffWebCam: 0
     renderTextureLayer: 30
