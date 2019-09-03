@@ -4,25 +4,25 @@
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.TextureShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Name\": \"Emissive_Mask\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"295804e6-dbd3-416f-b720-81a74280cb8f\"\n    },\n    \"m_DefaultReferenceName\": \"Texture2D_449C6440\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_Value\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\": \"\"\n    },\n    \"m_Modifiable\": true,\n    \"m_DefaultType\": 0\n}"
+            "JSONnodeData": "{\n    \"m_Name\": \"Emissive_Mask\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"295804e6-dbd3-416f-b720-81a74280cb8f\"\n    },\n    \"m_DefaultReferenceName\": \"Texture2D_449C6440\",\n    \"m_OverrideReferenceName\": \"_Emissive_Mask\",\n    \"m_Value\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\": \"\"\n    },\n    \"m_Modifiable\": true,\n    \"m_DefaultType\": 0\n}"
         },
         {
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.TextureShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Name\": \"Diffuse_Mask\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"98774c67-e6f3-4410-a560-6fe04566ce06\"\n    },\n    \"m_DefaultReferenceName\": \"Texture2D_398BE005\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_Value\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\": \"\"\n    },\n    \"m_Modifiable\": true,\n    \"m_DefaultType\": 0\n}"
+            "JSONnodeData": "{\n    \"m_Name\": \"Diffuse_Mask\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"98774c67-e6f3-4410-a560-6fe04566ce06\"\n    },\n    \"m_DefaultReferenceName\": \"Texture2D_398BE005\",\n    \"m_OverrideReferenceName\": \"_Diffuse_Mask\",\n    \"m_Value\": {\n        \"m_SerializedTexture\": \"\",\n        \"m_Guid\": \"\"\n    },\n    \"m_Modifiable\": true,\n    \"m_DefaultType\": 0\n}"
         },
         {
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.ColorShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Name\": \"Emissive_Color\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"2e535442-be2c-4fac-9eb4-9c8e961c78b4\"\n    },\n    \"m_DefaultReferenceName\": \"Color_E4BF409C\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_Value\": {\n        \"r\": 0.0,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 0,\n    \"m_Hidden\": false\n}"
+            "JSONnodeData": "{\n    \"m_Name\": \"Emissive_Color\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"2e535442-be2c-4fac-9eb4-9c8e961c78b4\"\n    },\n    \"m_DefaultReferenceName\": \"Color_E4BF409C\",\n    \"m_OverrideReferenceName\": \"_Emissive_Color\",\n    \"m_Value\": {\n        \"r\": 0.0,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 0,\n    \"m_Hidden\": false\n}"
         },
         {
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.ColorShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Name\": \"Diffuse_Color\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"192f5e47-531c-426f-af9c-080854a81c5c\"\n    },\n    \"m_DefaultReferenceName\": \"Color_B9AD935E\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_Value\": {\n        \"r\": 0.0,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 0,\n    \"m_Hidden\": false\n}"
+            "JSONnodeData": "{\n    \"m_Name\": \"Diffuse_Color\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"192f5e47-531c-426f-af9c-080854a81c5c\"\n    },\n    \"m_DefaultReferenceName\": \"Color_B9AD935E\",\n    \"m_OverrideReferenceName\": \"_Diffuse_Color\",\n    \"m_Value\": {\n        \"r\": 0.0,\n        \"g\": 0.0,\n        \"b\": 0.0,\n        \"a\": 0.0\n    },\n    \"m_ColorMode\": 0,\n    \"m_Hidden\": false\n}"
         }
     ],
     "m_GUID": {
