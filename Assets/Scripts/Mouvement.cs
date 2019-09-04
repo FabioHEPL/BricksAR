@@ -19,6 +19,7 @@ public class Mouvement : MonoBehaviour
 
     [SerializeField]
     private float currentTime = 0f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,6 @@ public class Mouvement : MonoBehaviour
         {
             currentTime += Time.deltaTime;
             transform.position = Vector3.Lerp(from.position, to.position, currentTime / time);
-            Debug.Log(currentTime / time);
         }
         else
         {
@@ -44,8 +44,8 @@ public class Mouvement : MonoBehaviour
 
     private void Invert()
     {
-        Vector3 fromPosition = from.position;
-        from.position = to.position;
-        to.position = fromPosition;
+        Transform temp = from;
+        from = to;
+        to = temp;
     }
 }
