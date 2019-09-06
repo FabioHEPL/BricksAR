@@ -31,10 +31,30 @@ public class Mimic : MonoBehaviour
     [SerializeField]
     private Canvas canvas;
 
+    [SerializeField]
+    private Collider _collider;
+
+    [SerializeField]
+    private Renderer _renderer;
+
+    [SerializeField]
+    private float sensitivity = 1;  
+
+    public float Sensitivity
+    {
+        get { return sensitivity; }
+        set { sensitivity = value; }
+    }
+
 
     private void Awake()
     {
         //this.targetState = this._gameObject.GetComponent<ImageTargetState>();
+
+        this._renderer = this.GetComponent<Renderer>();
+
+
+
 
         TransposeCameraPositionX();
 
@@ -92,15 +112,13 @@ public class Mimic : MonoBehaviour
         {
 
             this.transform.position =
-                Vector3.SmoothDamp(                   
-                    
+                Vector3.SmoothDamp(                    
                     this.transform.position,
                     new Vector3(TransposeCameraPositionX(),
                     this.transform.position.y,
                     this.transform.position.z),
                     ref currentVelocity,
                     smoothTime * Time.deltaTime);
-
 
         }
         
@@ -109,18 +127,31 @@ public class Mimic : MonoBehaviour
 
     public float TransposeCameraPositionX()
     {
-        float cameraPositionRatio = Mathf.InverseLerp(this.minCameraX, this.maxCameraX, this.mainCamera.transform.position.x);
-
         float leftX, rightX = 0f;
-        GetLeftRightX(out leftX, out rightX);
-       // Debug.Log($"Left X : {leftX} | Right X : {rightX}");
-       // Debug.Log($"Camera posX : {this.mainCamera.transform.position.x} | Camera position ratio : {cameraPositionRatio}");
+        this.GetLeftRightX(out leftX, out rightX);
 
-        float cameraPositionXTransposed = Mathf.Lerp(leftX, rightX, cameraPositionRatio);
 
-        //Debug.Log($"Camera position X transposed : {cameraPositionXTransposed}");
+        float barWidth = _renderer.bounds.extents.x;
 
-        return cameraPositionXTransposed;
+
+
+        //Debug.Log($"lossy : {this.transform.lossyScale.x} || local : {this.transform.localScale.x}");
+
+        return Mathf.Clamp(this.mainCamera.transform.position.x * this.sensitivity, leftX + (barWidth / 2), rightX - (barWidth / 2));
+
+
+       // float cameraPositionRatio = Mathf.InverseLerp(this.minCameraX, this.maxCameraX, this.mainCamera.transform.position.x);
+
+       // float leftX, rightX = 0f;
+       // GetLeftRightX(out leftX, out rightX);
+       //// Debug.Log($"Left X : {leftX} | Right X : {rightX}");
+       //// Debug.Log($"Camera posX : {this.mainCamera.transform.position.x} | Camera position ratio : {cameraPositionRatio}");
+
+       // float cameraPositionXTransposed = Mathf.Lerp(leftX, rightX, cameraPositionRatio);
+
+       // //Debug.Log($"Camera position X transposed : {cameraPositionXTransposed}");
+
+       // return cameraPositionXTransposed;
     }
 
 
