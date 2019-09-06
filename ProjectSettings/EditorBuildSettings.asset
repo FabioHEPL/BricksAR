@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/AR Level.unity
+    guid: ff5dcd8ce7943e74faead8fc837c2ebb
   m_configObjects: {}
