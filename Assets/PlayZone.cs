@@ -38,10 +38,11 @@ public class PlayZone : MonoBehaviour
             this.avatar.transform.localScale = this.scale;
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            this.locked = true;
-        }
+    }
+
+    public void Lock()
+    {
+        this.locked = true;
     }
 
     private void OnValidate()

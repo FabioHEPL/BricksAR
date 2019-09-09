@@ -16,9 +16,7 @@ public class LoseCondition : MonoBehaviour
 
     private void OnEnable()
     {
-
         loseZone.Triggered += LoseZone_Triggered;
-
     }
 
     private void LoseZone_Triggered(Collider obj)

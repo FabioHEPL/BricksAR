@@ -17,7 +17,7 @@ public class BallPhysics : MonoBehaviour
 
     private void OnEnable()
     {
-        rg.AddForce(transform.forward * Time.deltaTime * speed);
+        rg.AddRelativeForce(transform.forward * speed, ForceMode.Force);
     }
 
     private void Start()
@@ -28,6 +28,11 @@ public class BallPhysics : MonoBehaviour
     void Update()
     {
 
+    }
+
+    private void FixedUpdate()
+    {
+ 
     }
 
     private void OnCollisionEnter(Collision collision)

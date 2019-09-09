@@ -20,7 +20,7 @@ public class Brick : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            Object.Destroy(this.gameObject);
+            Object.Destroy(this.gameObject, 0.25f);
         }
     }
 

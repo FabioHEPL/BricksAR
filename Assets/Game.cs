@@ -12,6 +12,8 @@ public class Game : MonoBehaviour
     [SerializeField]
     private WinCondition winCondition;
 
+    public event Action<EndGame> Ended;
+
     private void OnEnable()
     {
         this.loseCondition.Fulfilled += LoseCondition_Fulfilled;
@@ -24,14 +26,32 @@ public class Game : MonoBehaviour
         this.winCondition.Fulfilled -= WinCondition_FulFilled;
     }
 
-    private void LoseCondition_Fulfilled()
+
+    private void OnEnded(EndGame endGame)
     {
-        SceneManager.LoadScene("Main Level");
+        this.Ended?.Invoke(endGame);
     }
 
     private void WinCondition_FulFilled()
+    {                
+        OnEnded(EndGame.Victory);
+        this.LoadScene("AR Level", 5f);
+    }
+
+    private void LoseCondition_Fulfilled()
     {
-        //   SceneManager.LoadScene("Main Level");
-        Debug.Log("Win !");
+        OnEnded(EndGame.Defeat);
+        this.LoadScene("AR Level", 5f);
+    }
+
+    private void LoadScene(string name, float delay)
+    {
+        StartCoroutine(LoadScene_Coroutine(name, delay));
+    }
+
+    private IEnumerator LoadScene_Coroutine(string name, float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+        SceneManager.LoadScene(name);
     }
 }
